@@ -1,0 +1,89 @@
+const namOfCommunity = document.getElementById("nameOfCommunity");
+const members = document.getElementById("memberSection")
+
+namOfCommunity.innerHTML = localStorage.getItem("comnameShoe");
+
+const comNameContent = document.getElementById('communityContent');
+const alertForNoName = document.getElementById("noCommName")
+
+if (namOfCommunity.innerHTML === "") {
+    comNameContent.style.display = "none";
+    alertForNoName.style.display = "block"
+}else{
+    comNameContent.style.display = "block";
+    alertForNoName.style.display = "none";
+}
+
+
+
+
+const theResult = document.getElementById("output");
+const getImage = localStorage.getItem("my-image");
+
+const img = new Image();
+img.src = getImage;
+
+theResult.appendChild(img);
+
+const founder = document.getElementById("the-founder");
+
+founder.innerHTML = localStorage.getItem("username");
+
+const richardImg = document.getElementById("img1")
+const jamesImg = document.getElementById("img2")
+const ericaImg = document.getElementById("img3")
+const elizabethImg = document.getElementById("img4")
+const maryImg = document.getElementById("img5")
+const johnImg = document.getElementById("img6")
+const samuelImg = document.getElementById("img7")
+const ritaImg = document.getElementById("img8")
+
+const richardName = document.getElementById("name1")
+const jamesName = document.getElementById("name2")
+const ericaName = document.getElementById("name3")
+const elizabethName = document.getElementById("name4")
+const maryName = document.getElementById("name5")
+const johnName = document.getElementById("name6")
+const samuelName = document.getElementById("name7")
+const ritaName = document.getElementById("name8")
+
+richardName.innerHTML = localStorage.getItem("addRichard");
+jamesName.innerHTML = localStorage.getItem("addJames");
+ericaName.innerHTML = localStorage.getItem("addErica");
+elizabethName.innerHTML = localStorage.getItem("addElizabeth");
+maryName.innerHTML = localStorage.getItem("addMary");
+johnName.innerHTML = localStorage.getItem("addJohn");
+samuelName.innerHTML = localStorage.getItem("addSamuel");
+ritaName.innerHTML = localStorage.getItem("addRita");
+
+if (richardName.innerHTML === "") {
+    richardImg.style.display = "none";
+}
+
+if (jamesName.innerHTML === "") {
+    jamesImg.style.display = "none";
+}
+
+if (ericaName.innerHTML === "") {
+    ericaImg.style.display = "none";
+}
+
+if (elizabethName.innerHTML === "") {
+    elizabethImg.style.display = "none";
+}
+
+if (maryName.innerHTML === "") {
+    maryImg.style.display = "none";
+}
+
+if (johnName.innerHTML === "") {
+    johnImg.style.display = "none";
+}
+
+if (samuelName.innerHTML === "") {
+    samuelImg.style.display = "none";
+}
+
+if (ritaName.innerHTML === "") {
+    ritaImg.style.display = "none";
+}

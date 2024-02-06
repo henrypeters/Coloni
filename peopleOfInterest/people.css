@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&family=Nunito:wght@200&family=Open+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #e6e1e11e;
+}
+
+.navbar{
+    width: 100%;
+    height: 11vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav{
+    flex: 1;
+    padding-left: 100px;
+}
+
+nav ul{
+    margin-top: 35px;
+    margin-left: 500px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 27px;
+}
+
+nav ul li a{
+    cursor: pointer;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 0.671);
+}
+
+nav ul li a:hover{
+    color: #333;
+}
+
+nav ul li:hover{
+    border-bottom: 2px #063172f8 solid;
+}
+
+.logo h1{
+    color: #000000;
+    cursor: pointer;
+    font-size: 35px;
+    margin-left: 100px;
+    margin-bottom: -15px;
+}
+
+hr{
+    margin-left: 7.5%;
+    width: 82%;
+    margin-top: 15px;
+    border: 1px solid rgba(51, 51, 51, 0.151);
+}
+
+/* people */
+.people{
+    margin-top: 70px;
+}
+
+.people h3{
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #242323;
+    text-align: center;
+}
+
+.subHr{
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 520px;
+    background-color: #00000005;
+}
+
+.professionLinks{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 420px;
+}
+
+.professionLinks p{
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+    transition: all 0.1s;
+}
+
+/* .professionLinks p:hover{
+    color: #075ad8;
+} */
+
+#allLink{
+    color: #075ad8;
+    padding: 10px;
+    border-bottom: 2px solid #075ad8;
+}
+
+#cateringLink{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+#drawingLink{
+    padding: 10px; 
+    margin-left: 20px;
+}
+
+#paintingLink{
+    padding: 10px; 
+    margin-left: 20px;
+}
+
+#carpentryLink{
+    padding: 10px; 
+    margin-left: 20px;
+}
+
+#shoeMakingLink{
+    /* border: 1px solid #333; */
+    padding: 10px; 
+    margin-left: 20px;
+}
+
+/* peopleCard */
+.peopleCard{
+    width: 855px;
+    height: auto;
+    margin-top: 60px;
+    margin-left: 240px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 2px 66px 22px #33333318;    
+}
+
+.workTitle{
+    padding: 30px 80px;
+    margin-top: 50px;
+}
+
+/* catering */
+.cateringImg{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+/* drawing */
+.drawingHolder{
+    margin-top: 90px;
+}
+
+.drawingImg{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+/* painting */
+.paintingHolder{
+    margin-top: 90px;
+}
+
+.paintingImg{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+/* carpentry */
+.carpentryHolder{
+    margin-top: 90px;
+}
+
+.carpentryImg{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+/* shoe */
+.shoeHolder{
+    margin-top: 90px;
+}
+
+.shoeImg{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.firstSet{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.firstSet a{
+    text-decoration: none;
+}
+
+.firstSet .member{
+    cursor: pointer;
+    text-align: center;
+    margin-left: 60px;
+    border: none;
+    transition: all 0.6s;
+}
+
+.firstSet .member:hover{
+    transform: scale(1.1);
+}
+
+.firstSet .member img{
+    width: 100px;
+    height: 95px;
+    border-radius: 100px;
+}
+
+.firstSet .member p{
+    color: #242323;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.secondSet{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+.secondSet a{
+    text-decoration: none;
+}
+
+.secondSet .member{ 
+    cursor: pointer;
+    text-align: center;
+    margin-left: 60px;
+    border: none;
+    transition: all 0.6s;
+}
+
+.secondSet .member:hover{
+    transform: scale(1.1);
+}
+
+.secondSet .member img{
+    width: 100px;
+    height: 95px;
+    margin-top: 30px;
+    border-radius: 100px;
+}
+
+.secondSet .member p{
+    color: #242323;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* footer */
+.footer{
+    background-color: rgb(31, 30, 30);
+    padding: 6% 0%;
+}
+
+.company h1{
+    font-size: 30px;
+    margin-top: -10px;
+    margin-left: 70px;
+    color: #fff;
+}
+
+.company p{
+    color: rgba(255, 255, 255, 0.473);
+    margin-left: 70px;
+}
+
+.footerNavlist {
+    margin-top: -25px;
+    margin-left: 130px;
+}
+
+.footerNavlist ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footerNavlist ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: ease-in 0.5s;
+}
+
+.footerNavlist ul li a:hover{
+    color: #19b2d8;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    margin: 0px auto;
+    max-width: 100%;
+    padding-left: 60px;
+}
+
+.footerSocial{
+    margin-left: 100px;
+}
+
+.footerSocial img{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+    margin-top: 20px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.footerSocial img:hover{
+    transform: translateY(-5px);
+}
+
+.hrHolder hr{
+    width: 1100px;
+    margin-top: 90px;
+    margin-left: 100px;
+    border: 1px solid #ffffff8a;
+
+}
+
+.copyright{
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: -60px;
+}

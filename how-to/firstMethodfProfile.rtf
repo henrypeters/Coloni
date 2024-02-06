@@ -1,0 +1,248 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 1\par
+<!DOCTYPE html>\par
+<html lang="en">\par
+<head>\par
+    <meta charset="UTF-8">\par
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\par
+    <title>Profile</title>\par
+    <link rel="stylesheet" href="profile.css">\par
+</head>\par
+<body>\par
+    <div class="navbar">\par
+        <div class="logo">\par
+            <h1>Coloni</h1>\par
+        </div>\par
+\par
+        <nav>\par
+            <ul class="navlist">\par
+                <li><a href="../index.html">Home</a></li>\par
+                <li><a href="#">Profile</a></li>\par
+            </ul>\par
+        </nav>\par
+    </div><hr>\par
+\par
+    <div class="container">\par
+        <h2 id="textTitle">Please Fill In The Fields To View Profile</h2>\par
+        <div class="inputSection" id="inputSection">\par
+            <div class="firstSection">\par
+                    <div class="input">\par
+                        <p>Name</p>\par
+                        <input type="text" placeholder="Name" id="name" />\par
+                    </div>\par
+\par
+                    <div class="input">\par
+                        <p>State</p>\par
+                        <input type="text" placeholder="State" id="state" />\par
+                    </div>\par
+\par
+                    <div class="input">\par
+                        <p>Country</p>\par
+                        <input type="text" placeholder="Country" id="country" />\par
+                    </div>\par
+\par
+                    <div class="input">\par
+                        <p>Occupation (relating to skill)</p>\par
+                        <input type="text" placeholder="Skill" id="profession" />\par
+                    </div>\par
+\par
+                    <div class="input">\par
+                        <p>How long have you been in this occupation</p>\par
+                        <input type="text" placeholder="How long" id="time-span" />\par
+                    </div>\par
+            </div>\par
+\par
+            \par
+            <div class="secondSection">\par
+                    <div class="input">\par
+                        <p>Reason to join/create a communtiy (In sentence)</p>\par
+                        <input type="text" placeholder="State your reason" id="reason">\par
+                    </div>\par
+\par
+                    <div class="input">\par
+                        <p>What are your qualities</p>\par
+                        <input type="text" placeholder="Qualities" id="qualities">\par
+                    </div>\par
+\par
+                    <div class="input">\par
+                        <p>Companies you hope to work with in the future</p>\par
+                        <input type="text" placeholder="Companies" id="companiesForFuture">\par
+                    </div>\par
+                    \par
+                    <div class="input">\par
+                        <p>How will you impact the society with your profession (In sentence)</p>\par
+                        <input type="text" placeholder="Your imapct in the society" id="impact">\par
+                    </div>\par
+                    \par
+                    <div class="input">\par
+                        <p>Profile Key</p>\par
+                        <input type="text" placeholder="Key" id="profileKey">\par
+                    </div>\par
+                </div>\par
+                <button id="storeBtn"> <p>Turn to readable text</p> </button>\par
+        </div>\par
+\par
+        <div id="profileProcedures">\par
+            <div id="accessKeyMessage">\par
+                <div class="accessKeyCard">\par
+                    <p class="text"> View Profile using key </p><hr class="hr1"> <hr class="hr2">\par
+                    <input type="text" placeholder="Key" id="retrieveInput" >\par
+                    <button id="retriveProfile" onclick="viewProfile()"> View </button>\par
+                </div>\par
+            </div>\par
+\par
+\par
+            <div id="viewProfileMessage">\par
+                <div class="profileCard">\par
+                    <p class="profileText">My Profile</p>\par
+                        <div id="profileValrableHolder"></div>\par
+\par
+                    <a href="../choiceOfPartake/index.html"><button id="saveProfile">Save</button></a>\par
+                </div>\par
+            </div>\par
+        </div>\par
+        \par
+        <div id="accessKeyMessage"></div>\par
+        <div id="text"></div>\par
+        <div id="inputForRetrieve"></div>\par
+        <div id="buttonToView"></div>\par
+\par
+        <div id="viewProfileMessage"></div>\par
+        <div id="headerForText"></div>\par
+\par
+    </div>\par
+\par
+\par
+    <!-- <div id="viewProfileMessage">\par
+        <div class="profileCard">\par
+            <p class="profileText">My Profile</p>\par
+                <div id="profileValrableHolder">\par
+                    <p>My name is James Brown, I am a Doctor from Niger state, Nigeria.\par
+                        I have been in this profession for the past 10 years.\par
+                        I want to join a hub to be creative. I am patient. In future, I would like to work\par
+                        with Rapha hospital.\par
+                        With my acquired skill I will save lives</p>\par
+                </div>\par
+\par
+            <a href=""><button id="saveProfile">Save</button></a>\par
+        </div>\par
+    </div> -->\par
+\par
+    <script src="profile.js"></script>\par
+</body>\par
+</html>\par
+\par
+\par
+\par
+2\par
+const nameInput = document.getElementById("name")\par
+const stateInput = document.getElementById("state");\par
+const countryInput = document.getElementById("country");\par
+const professionInput = document.getElementById("profession");\par
+const timelineInput =document.getElementById("time-span");\par
+const reasonInput = document.getElementById("reason");\par
+const qualitiesInput = document.getElementById("qualities");\par
+const futureCompaniesInput = document.getElementById("companiesForFuture");\par
+const impactInput = document.getElementById("impact");\par
+const profileKeyInput = document.getElementById("profileKey");\par
+const inputsHolder = document.getElementById("inputSection");\par
+const title = document.getElementById("textTitle");\par
+const buttonToStore = document.getElementById("storeBtn")\par
+const holderOfProfileKeyAndProfileMessage = document.getElementById("profileProcedures");\par
+const messageForProfileKey = document.getElementById("accessKeyMessage");\par
+const messageForProfile = document.getElementById("viewProfileMessage");\par
+\par
+buttonToStore.style.display = "none";\par
+holderOfProfileKeyAndProfileMessage.style.display = "none"\par
+\par
+\par
+function eventAfterKeyUp() \{\par
+    if(nameInput.value.length > 0 && stateInput.value.length > 0  \par
+        && countryInput.value.length > 0 && professionInput.value.length > 0 \par
+        && timelineInput.value.length > 0 && reasonInput.value.length > 0 \par
+        && qualitiesInput.value.length > 0 && futureCompaniesInput.value.length > 0\par
+        && impactInput.value.length > 0 && profileKeyInput.value.length > 0) \{\par
+            buttonToStore.style.display = "block";\par
+            buttonToStore.addEventListener("click", accessProfileThroughKey);  \par
+    \}else\{\par
+        console.log("wrong value")\par
+    \}\par
+\par
+\}\par
+\par
+function accessProfileThroughKey() \{\par
+    inputsHolder.style.display = "none";\par
+    title.style.display = "none";\par
+\par
+    holderOfProfileKeyAndProfileMessage.style.display = "block";\par
+    messageForProfile.style.display = "none"\par
+\par
+    const inputForProfileKey = document.getElementById('profileKey').value;\par
+    const name = document.querySelector("#name")\par
+    const state = document.querySelector("#state");\par
+    const country = document.querySelector("#country");\par
+    const profession = document.querySelector("#profession");\par
+    const timeline =document.querySelector("#time-span");\par
+    const reason = document.querySelector("#reason");\par
+    const qualities = document.querySelector("#qualities");  \par
+    const futureCompanies = document.querySelector("#companiesForFuture");\par
+    const impact = document.querySelector("#impact");\par
+\par
+    const profileDetail1 = [\par
+        \{\par
+            name: name.value, state: state.value, country: country.value, \par
+            profession: profession.value, timeline: timeline.value,\par
+            reason: reason.value, qualities: qualities.value, \par
+            futureCompanies: futureCompanies.value, impact: impact.value \par
+        \}\par
+    ]\par
+\par
+\par
+    let string = "";\par
+    profileDetail1.map((x) => \{\par
+    string += `My name is $\{x.name\}, I am a $\{x.profession\} from $\{x.state\} state, $\{x.country\}. \par
+    I have been in this profession for the past $\{x.timeline\}. $\{x.reason\}. I am $\{x.qualities\}. In future, I would like to work\par
+    with $\{x.futureCompanies\}. $\{x.impact\}`;\par
+    \})\par
+\par
+    window.localStorage.setItem(inputForProfileKey, string);    \par
+\}\par
+\par
+function viewProfile() \{\par
+    \par
+    messageForProfileKey.style.display = "none";\par
+    messageForProfile.style.display = "block";\par
+\par
+    const key = document.getElementById("retrieveInput").value; //gets key from user\par
+    const records = window.localStorage.getItem(key); //searches for the key in localStorage\par
+    const paragraph = document.createElement("p");\par
+    const infor = document.createTextNode(records);\par
+    paragraph.appendChild(infor)\par
+    element = document.getElementById("profileValrableHolder");\par
+    element.appendChild(paragraph)\par
+\}\par
+\par
+profileKeyInput.addEventListener("keyup", eventAfterKeyUp);\par
+\par
+\par
+\par
+\par
+\par
+\fs44 StarkNet is a validity rollup layer 2- commonly refered to as a type of Zero-knowledge Rollup\par
+\par
+Given a Sudoku puzzle, it is easier \par
+\par
+
+\pard\sa200\sl240\slmult1 Layer 1 -      ethereum\par
+
+\pard\sa200\sl276\slmult1 Layer 2 - they are solution to the problem in layer 1\par
+\par
+\par
+\par
+Miners have acces to put transactions in block chain\par
+\par
+ \par
+\fs22\par
+}
+ 

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&family=Nunito:wght@200&family=Open+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #F3F4F9;
+}
+
+/* navbar */
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    transition: 0.3s;
+}
+
+header.sticky{
+    background: #ffffff;
+    height: 90px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.233)
+}
+
+.logo{
+    width: 160px;
+    margin-left: 100px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.logoChange{
+    color: #000000;
+}
+
+.navlist{
+    display: flex;
+    margin-top: 1px;
+    margin-left: 450px;
+}
+
+.navlist li{
+    position: relative;
+    list-style: none;
+}
+
+.link{
+    font-size: 17px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    padding: 10px 27px;
+}
+
+.link:hover{
+    border-bottom: 2px #333333af solid;
+}
+
+.linkChange{
+    color: #000000;
+    font-size: 18px;
+}
+
+.linkChange2{
+    color: #000000;
+    font-size: 18px;
+}
+
+.linkChange3{
+    color: #000000;
+    font-size: 18px;
+}
+
+.linkChange4{
+    color: #000000;
+    font-size: 18px;
+}
+
+/* goal */
+.goalHolder{
+    display: flex;
+    margin-top: 150px;
+    margin-left: 420px;
+    text-align: center;
+}
+
+.goalHolder a{
+    color: #333333f5;
+    text-decoration: none;
+}
+
+.goalHolder a .communityGoal{
+    padding: 10px;
+}
+
+.goalHolder a .myGoal{
+    padding: 10px;
+    margin-left: 300px;
+    border-bottom: 1px solid #333;
+}
+
+/* todo */
+.container{
+    margin-top: 60px;
+    margin-left: 330px;
+    margin-bottom: 20px;
+}
+
+.card{
+    padding: 20px;
+    width: 650px;
+    height: auto;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 1px 22px 44px #c4c2c2; 
+}
+
+.card p{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.inputAddHold{
+    display: flex;
+}
+
+.inputAddHold input{
+    width: 350px;
+    height: 48px;
+    padding: 0 60px 0 0;
+    font-size: 17px;
+    font-weight: 900;
+    text-indent: 40px;
+    margin-top: 33px;
+    margin-left: 110px;
+    margin-bottom: 40px;
+    outline: none;
+    background-color: #88888836;
+    border: none;
+    border-radius: 20px;
+}
+
+.inputAddHold button{
+    width: 46.9px;
+    height: 46.9px;
+    cursor: pointer;
+    margin-top: 33.5px;
+    margin-left: -47px;
+    background-color: #1284b1;
+    border-radius: 100px;
+    border: 1px solid #1284b1;
+    transition: ease-in-out 0.3s;
+}
+
+.inputAddHold button:hover{
+    background-color: #0b07ee;
+}
+
+.inputAddHold button img{
+    width: 28px;
+    height: 28px;
+    margin-top: 2px;
+    margin-left: 1px;
+    filter: invert(1);
+}
+
+#clearButton{
+    margin-top: -20px;
+    margin-left: 250px;
+}
+
+.clear-button{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 550;
+    padding: 10px 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background-color: #ff491c;
+    transition: 0.4s;
+}
+
+.clear-button:hover{
+    letter-spacing: 1px;
+    background-color: #ff1100;
+}
+
+#todo .todoCard{
+    display: flex;
+    width: 460px;
+    height: auto;
+    padding: 25px;
+    font-size: 16.5px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    text-indent: 20px;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: #ffffff69;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.336);
+    transition: 0.5s;
+}
+
+#todo .todoCard:hover{
+    color: #fff;
+    font-size: 17px;
+    transform: translateY(-1px);
+    background-color: #2d9aff;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goals</title>
+    <link rel="stylesheet" href="goalPage.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo" id="logo">Coloni</h1>
+
+            <nav>
+                <ul class="navlist">
+                    <li><a href="../../../../../../index.html" class="link" id="link0">Home</a></li>
+                    <li><a href="../../../../../join.html" class="link" id="link1">Interest</a></li>
+                    <li><a href="../../../drawComm.html" class="link" id="link1">Communities</a></li>
+                    <li><a href="./commPage.html" class="link" id="link2">Back</a></li>
+                    <li><a href="goalPage.html" class="link"  id="link3">Goals</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <div class="goalHolder">
+            <a href="#">
+                <div class="communityGoal">
+                    <p>Community Goal</p>
+                </div>
+            </a>
+    
+            <a href="myGoal/myGoal.html">
+                <div class="myGoal">
+                    <p>My Goal</p>
+                </div>
+            </a>
+        </div>
+
+    <div class="container">
+        <div class="card">
+
+            <p>Commmunity goals</p>
+
+            <div class="inputAddHold">
+                <input type="text" placeholder="Goals ..." id="inputData">
+                <button onclick="add()"><img src="../../../../../../images/icons/big-plus-sign.png"></button>
+            </div>
+
+            <div id="clearButton">
+                <button class="clear-button" onclick="del()">Clear All</button>
+            </div>
+
+            <div id="todo">
+                <!-- <div class="todoCard">
+                    <div class="info">
+                        <p>Find all the files</p>
+                    </div>
+                    
+                    <div class="actions">
+                        <button class="delete"><img src="../../../../../../images/icons/trash.png" alt=""></button>
+                    </div>
+                </div> -->
+            </div>
+
+            
+        </div>
+    </div>
+    
+
+    <script src="goalPage.js"></script>
+</body>
+</html>

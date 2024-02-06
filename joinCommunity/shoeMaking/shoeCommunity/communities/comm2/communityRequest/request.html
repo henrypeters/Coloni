@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+    <link rel="stylesheet" href="request.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo" id="logo">Coloni</h1>
+
+            <nav>
+                <ul class="navlist">
+                    <li><a href="../../../../../../index.html" class="link" id="link0">Home</a></li>
+                    <li><a href="existingProfileForRequest/profileRequest.html" class="link"  id="link1">Profile</a></li>
+                    <li><a href="../comm2.html#joinCommunity" class="link">Back</a></li>
+                    <li><a href="../../../../../join.html" class="link">Interest</a></li>
+                    <li><a href="../../../../../../choiceOfPartake/index.html" class="link">Choice</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><hr>
+
+    <div class="intro" id="intro">
+        <h3>Hi there, we are Sanchez community. In other to be a member of this community, you have to write down your 
+            profile key.
+        </h3>
+    </div>
+
+    <div id="profileProcedures">
+        <div id="accessKeyMessage">
+            <div class="accessKeyCard">
+                <p class="text"> Your Profile key </p>
+                <input type="text" placeholder="Key" id="retrieveInput" >
+                <button id="retriveProfile" onclick="viewProfile()"> View </button>
+            </div>
+        </div>
+
+
+        <div id="viewProfileMessage">
+            <div class="profileCard">
+                <p class="profileText">My Profile</p>
+                    <div id="profileValrableHolder"></div>
+
+                <a href="../communityPage/commPage.html"><button id="sendProfile">Send</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="acceptance"></div>
+    <script src="request.js"></script>
+</body>
+</html>

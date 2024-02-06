@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&family=Nunito:wght@200&family=Open+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #e6e1e11e;
+}
+
+.navbar{
+    width: 100%;
+    height: 11vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav{
+    flex: 1;
+    padding-left: 100px;
+}
+
+nav ul{
+    margin-top: 28px;
+    margin-left: 490px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 27px;
+}
+
+nav ul li a{
+    cursor: pointer;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 0.671);
+}
+
+nav ul li a:hover{
+    color: #333;
+}
+
+nav ul li:hover{
+    border-bottom: 2px #063172f8 solid;
+}
+
+.logo h1{
+    color: #000000;
+    cursor: pointer;
+    font-size: 35px;
+    margin-left: 100px;
+    margin-bottom: -15px;
+}
+
+hr{
+    margin-left: 7.5%;
+    width: 83.5%;
+    margin-top: 15px;
+    border: 1px solid rgba(51, 51, 51, 0.151);
+}
+
+/* container */
+.container{
+    width: 1180px;
+    height: auto;
+    margin-top: 80px;
+    margin-left: 80px;
+    background-color: #fff;
+    box-shadow: 1px 2px 66px 22px #33333318;
+}
+
+.titleText{
+    padding: 90px 90px;
+}
+
+.titleText h3{
+    font-size: 25px;
+    font-weight: 800;
+    color: rgba(39, 39, 39, 0.795);
+    letter-spacing: 5px;
+}
+
+.titleText p{
+    font-size: 18px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.884);
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.professionCard{
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.firstSet{
+    display: flex;
+    width: 1140px;
+}
+
+.secondSet{
+    display: flex;
+    width: 1140px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.work{
+    width: 460px;
+    height: auto;
+    margin-left: 100px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0, 0.2);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.work:hover{
+    transform: translateY(-10px);
+}
+
+.work a{
+    text-decoration: none;
+}
+
+.work img{
+    width: 100%;
+    height: 270px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.work p{
+    color: #202020;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    /* line-height: 14px; */
+}
+
+.work .skillName1{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 170px;
+}
+
+.work .skillName2{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 142px;   
+}
+
+.work .skillName3{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 138px;   
+}
+
+.work .skillName4{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 165px;   
+}
+
+.work .skillName5{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 145px;   
+}
+
+.work .skillName6{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 110px;   
+}
+
+/* footer */
+.footer{
+    background-color: rgb(31, 30, 30);
+    padding: 6% 0%;
+}
+
+.company h1{
+    font-size: 30px;
+    margin-top: -10px;
+    margin-left: 70px;
+    color: #fff;
+}
+
+.company p{
+    color: rgba(255, 255, 255, 0.473);
+    margin-left: 70px;
+}
+
+.footerNavlist {
+    margin-top: -25px;
+    margin-left: 130px;
+}
+
+.footerNavlist ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footerNavlist ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: ease-in 0.5s;
+}
+
+.footerNavlist ul li a:hover{
+    color: #19b2d8;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    margin: 0px auto;
+    max-width: 100%;
+    padding-left: 60px;
+}
+
+.footerSocial{
+    margin-left: 100px;
+}
+
+.footerSocial img{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+    margin-top: 20px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.footerSocial img:hover{
+    transform: translateY(-5px);
+}
+
+.hrHolder hr{
+    width: 1100px;
+    margin-top: 90px;
+    margin-left: 100px;
+    border: 1px solid #ffffff8a;
+
+}
+
+.copyright{
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: -60px;
+}

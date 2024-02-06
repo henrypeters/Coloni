@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&family=Nunito:wght@200&family=Open+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #e6e1e11e;
+}
+
+.navbar{
+    width: 100%;
+    height: 11vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav{
+    flex: 1;
+    padding-left: 100px;
+}
+
+nav ul{
+    margin-top: 35px;
+    margin-left: 530px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 27px;
+}
+
+nav ul li a{
+    cursor: pointer;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 0.671);
+}
+
+nav ul li a:hover{
+    color: #333;
+}
+
+nav ul li:hover{
+    border-bottom: 2px #063172f8 solid;
+}
+
+.logo h1{
+    color: #000000;
+    cursor: pointer;
+    font-size: 35px;
+    margin-left: 100px;
+    margin-bottom: -15px;
+}
+
+hr{
+    margin-left: 7.5%;
+    width: 82%;
+    margin-top: 15px;
+    border: 1px solid rgba(2, 2, 2, 0.151);
+}
+
+/* container */
+.container{
+    width: 800px;
+    height: auto;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 280px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 22px 44px #9b9b9b;
+}
+
+.communityHolder{
+    margin-top: 20px;
+}
+
+.nameOfCommunity{
+    font-size: 42px;
+    text-align: center;
+}
+
+.founderSection{
+    margin-top: 40px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.founderSection p{
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.founderSection .output img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+}
+
+.memberSection{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px; 
+    margin-left: 100px;
+}
+
+.imgHolder{
+    text-align: center;
+}
+
+.memberSection .imgHolder img{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    border-radius: 100px;
+    transition: ease-in 0.2s;
+}
+
+.memberSection .imgHolder p{
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+.memberSection .imgHolder img:hover{
+    transform: translateY(-5px);
+    background-color: #063172f8;
+}
+
+/* buttonHolder */
+.holdBtn{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonHolder{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.buttonHolder button{
+    color: #fff;
+    width: 98%;
+    font-size: 16px;
+    padding: 15px 160px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: #074475;
+    transition: all .3s;
+}
+
+.buttonHolder button:hover{
+    color: #fff;
+    transform: scale(1.02);
+    background-color: #0b6961;
+}
+
+
+
+/* buttonHolder2 */
+/* .buttonHolder2{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.buttonHolder2 button{
+    color: #fff;
+    width: 90%;
+    font-size: 16px;
+    padding: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: #05878b;
+    transition: all .5s;
+}
+
+.buttonHolder2 button:hover{
+    color: #333;
+    border: 1px solid #333;
+    background-color: #fff;
+} */
+
+
+/* No community name */
+.noCommName{
+    width: 500px;
+    height: auto;
+    padding: 50px;
+    margin-top: 10%;
+    margin-left: 420px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 22px 44px #9e9e9e;
+}
+
+.noCommName .title{
+    text-align: center;
+    line-height: 30px;
+}
+
+.noCommName a{
+    text-decoration: none;
+}
+
+.noCommName #createBtn{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #074475;
+    margin-top: 30px;
+    transition: all 0.4s;
+}
+
+.noCommName #createBtn:hover{
+    cursor: pointer;
+    letter-spacing: 1px;
+}

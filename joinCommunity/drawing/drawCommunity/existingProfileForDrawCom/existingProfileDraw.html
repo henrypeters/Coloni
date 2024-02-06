@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Profile</title>
+    <link rel="stylesheet" href="existingProfileDraw.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1>Coloni</h1>
+        </div>
+
+        <nav>
+            <ul class="navlist">
+                <li><a href="../../../../index.html">Home</a></li>
+                <li><a href="../drawComm.html">Back</a></li>
+            </ul>
+        </nav>
+    </div><hr>
+
+    <div id="profileContainer">
+        <div id="accessKeyMessage">
+            <div class="accessKeyCard">
+                <p class="text"> View Profile using key </p><hr class="hr1"> <hr class="hr2">
+                <input type="text" placeholder="Key" id="retrieveInput" >
+                <button id="retriveProfile" onclick="viewProfile()"> View </button>
+            </div>
+        </div>
+
+
+        <div id="viewProfileMessage">
+            <div class="profileCard">
+                <p class="profileText">My Profile</p>
+                    <div id="profileValrableHolder"></div>
+                    <div class="bottom"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="existingProfileDraw.js"></script>
+</body>
+</html>

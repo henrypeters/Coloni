@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1>Coloni</h1>
+        </div>
+
+        <nav>
+            <ul class="navlist">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </div><hr>
+
+    <div class="container">
+        <h2 id="textTitle">Please Fill In The Field To View Profile</h2>
+        <div class="inputSection" id="inputSection">
+            <textarea name="profile" id="profileInput" placeholder="Type Profile"></textarea>
+            <div class="access">
+                <input type="text" placeholder="Key" id="profileKey">
+            </div>
+            <button id="storeBtn"> <p>Turn to readable text</p> </button>
+        </div>
+
+        <div id="profileProcedures">
+            <div id="accessKeyMessage"> 
+                <div class="accessKeyCard">
+                    <p class="text"> View Profile using key </p><hr class="hr1"> <hr class="hr2">
+                    <input type="text" placeholder="Key" id="retrieveInput" >
+                    <button id="retriveProfile" onclick="viewProfile()"> View </button>
+                </div>
+            </div>
+
+
+            <div id="viewProfileMessage">
+                <div class="profileCard">
+                    <p class="profileText">My Profile</p>
+                        <div id="profileValrableHolder"></div>
+
+                    <a href="../choiceOfPartake/index.html"><button id="saveProfile">Save</button></a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="accessKeyMessage"></div>
+        <div id="text"></div>
+        <div id="inputForRetrieve"></div>
+        <div id="buttonToView"></div>
+
+        <div id="viewProfileMessage"></div>
+        <div id="headerForText"></div>
+
+    </div>
+
+
+    <!-- <div id="viewProfileMessage">
+        <div class="profileCard">
+            <p class="profileText">My Profile</p>
+                <div id="profileValrableHolder">
+                    <p>My name is James Brown, I am a Doctor from Niger state, Nigeria.
+                        I have been in this profession for the past 10 years.
+                        I want to join a hub to be creative. I am patient. In future, I would like to work
+                        with Rapha hospital.
+                        With my acquired skill I will save lives</p>
+                </div>
+
+            <a href=""><button id="saveProfile">Save</button></a>
+        </div>
+    </div> -->
+
+    <script src="profile.js"></script>
+</body>
+</html>
+
+
+<!-- #profileInput{
+    font-size: 20px;
+    padding: 20px;
+    width: 510px;
+    height: 200px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 1px 6px 44px #a5a4a4;
+    border-radius: 10px;
+    /* background-color: transparent; */
+}
+
+#profileInput::placeholder{
+    font-size: 30px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+#profileKey{
+    margin-top: 40px;
+} -->

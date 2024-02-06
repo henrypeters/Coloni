@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&family=Nunito:wght@200&family=Open+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #e6e1e16b;
+}
+
+/* navbar */
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    transition: 0.3s;
+}
+
+header.sticky{
+    background: #ffffff;
+    height: 90px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.233)
+}
+
+.logo{
+    width: 160px;
+    margin-left: 100px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.logoChange{
+    color: #000000;
+}
+
+.navlist{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 415px;
+}
+
+.navlist li{
+    position: relative;
+    list-style: none;
+}
+
+.link{
+    font-size: 17px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    padding: 10px 27px;
+}
+
+.link:hover{
+    border-bottom: 2px #333333af solid;
+}
+
+.linkChange{
+    color: #000000;
+    font-size: 18px;
+}
+
+.linkChange2{
+    color: #000000;
+    font-size: 18px;
+}
+
+.linkChange3{
+    color: #000000;
+    font-size: 18px;
+}
+
+hr{
+    margin-left: 7.5%;
+    width: 83.5%;
+    margin-top: 90px;
+    border: 1px solid rgba(51, 51, 51, 0.151);
+}
+
+/* intro */
+.intro{
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.intro h3{
+    color: #333;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: 200;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* card for accessing profile key */
+#accessKeyMessage .accessKeyCard{
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.452);
+    margin-top: 7%;
+    margin-left: 400px;
+    border-radius: 20px;
+    box-shadow: 1px 22px 66px 33px #c7c4c4;
+}
+
+.text{
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    margin-top: 50px;
+    margin-left: 175px;
+}
+
+#retrieveInput{
+    font-size: 16px;
+    color: #333;
+    font-weight: 800;
+    padding: 15px;
+    width: 380px;
+    height: 5px;
+    margin-top: 50px;
+    margin-left: 40px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #3333339c;
+    background-color: transparent;
+}
+
+#retrieveInput::placeholder{
+    color: #3d3d3de3;
+    font-size: 17px;
+}
+
+#retriveProfile{
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 12px;
+    width: 460px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #063172f8;
+    transition: ease .50s;
+    border-radius: 25px;   
+}
+
+#retriveProfile:hover{
+    color: #fff;
+    transform: scale(1);
+    letter-spacing: 2px;
+    background-color: #063172f8;
+}
+
+/* For viewing profile */
+#viewProfileMessage .profileCard{
+    width: 500px;
+    /* height: 350px; */
+    height: auto;
+    padding: 30px;
+    background-color: white;
+    margin-top: 8%;
+    margin-left: 400px;
+    border-radius: 20px;
+    box-shadow: 1px 22px 66px 33px #c7c4c4;
+}
+
+.profileText{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.profileValrableHolder{
+    margin-top: 50px;
+    max-width: 660px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+#sendProfile{
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 12px;
+    width: 460px;
+    margin-top: 40px;
+    margin-left: 18px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #063172f8;
+    transition: ease .50s;
+    border-radius: 25px;   
+}
+
+#sendProfile:hover{
+    color: #fff;
+    transform: scale(1);
+    letter-spacing: 2px;
+    background-color: #063172f8;
+}
+
+/* accept */
+.accept{
+    font-size: 20px;
+    text-align: center;
+}

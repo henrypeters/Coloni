@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&family=Nunito:wght@200&family=Open+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #e6e1e11e;
+}
+
+.navbar{
+    width: 100%;
+    height: 11vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav{
+    flex: 1;
+    padding-left: 100px;
+}
+
+nav ul{
+    margin-top: 35px;
+    margin-left: 530px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 27px;
+}
+
+nav ul li a{
+    cursor: pointer;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 0.671);
+}
+
+nav ul li a:hover{
+    color: #333;
+}
+
+nav ul li:hover{
+    border-bottom: 2px #063172f8 solid;
+}
+
+.logo h1{
+    color: #000000;
+    cursor: pointer;
+    font-size: 35px;
+    margin-left: 100px;
+    margin-bottom: -15px;
+}
+
+hr{
+    margin-left: 7.5%;
+    width: 82%;
+    margin-top: 15px;
+    border: 1px solid rgba(51, 51, 51, 0.151);
+}
+
+/* createCatering */
+.createDrawing{
+    margin-top: 50px;
+}
+
+.createDrawingText h2{
+    font-size: 25px;
+    font-weight: 200;
+    color: #000000;
+    color: #242323;
+    text-align: center;
+}
+
+.createDrawingText .subHr{
+    width: 220px;
+    margin-left: 560px;
+}
+
+#info-link{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 515px;
+}
+
+#info-link p{
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+    transition: all 0.1s;
+}
+
+.peopleLink{
+    color: #075ad8;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid #075ad8;
+}
+
+.communityLink{
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+/* create-card */
+.createCard{
+    width: 855px;
+    height: auto;
+    margin-top: 60px;
+    margin-left: 240px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 2px 66px 22px #33333318;    
+}
+
+.workTitle{
+    padding: 30px 80px;
+    margin-top: 50px;
+}
+
+/* catering */
+.peopleImg{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.firstSet{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.firstSet a{
+    text-decoration: none;
+}
+
+.firstSet .member{
+    cursor: pointer;
+    text-align: center;
+    margin-left: 60px;
+    border: none;
+    transition: all 0.6s;
+}
+
+.firstSet .member:hover{
+    transform: scale(1.1);
+}
+
+.firstSet .member img{
+    width: 100px;
+    height: 95px;
+    border-radius: 100px;
+}
+
+.firstSet .member p{
+    color: #242323;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.secondSet{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 130px;
+}
+
+.secondSet a{
+    text-decoration: none;
+}
+
+.secondSet .member{ 
+    cursor: pointer;
+    text-align: center;
+    margin-left: 60px;
+    border: none;
+    transition: all 0.6s;
+}
+
+.secondSet .member:hover{
+    transform: scale(1.1);
+}
+
+.secondSet .member img{
+    width: 100px;
+    height: 95px;
+    margin-top: 30px;
+    border-radius: 100px;
+}
+
+.secondSet .member p{
+    color: #242323;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.communityCardHolder{
+    margin-top: 10px;
+    margin-left: -15px;
+    padding-bottom: 100px;
+}
+
+.communityCard{
+    width: 600px;
+    height: auto;
+    padding: 30px;
+    margin-top: 40px;
+    margin-left: 95px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #686666;
+}
+
+.communityCard .communityName{
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 800pc;
+    margin-left: 10px;
+}
+
+.communityCardNew{
+    width: 600px;
+    height: auto;
+    padding: 40px;
+    margin-top: 50px;
+    margin-left: 90px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.281);
+    border-radius: 10px;
+    transition: ease-in 0.3s;
+}
+
+.communityCardNew:hover{
+    transform: scale(1.01);
+    background-color: #49a7ffb2;
+    /* background-color: #11438f85; */
+    /* transform: translateY(-10px); */
+}
+
+.communityCardNew a{
+    color: #0a0a0a;
+    text-decoration: none;
+}
+
+.communityCardNew .communityName{
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 800pc;
+    margin-left: 10px;
+}
+
+.describe{
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.members{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.members img{
+    width: 30px;
+    height: 30px;
+}
+
+.members p{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.rate{
+    display: flex;
+    margin-top: 10px;
+}
+
+.rate img{
+    width: 22px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+/* footer */
+.footer{
+    background-color: rgb(31, 30, 30);
+    padding: 10% 0%;
+}
+
+.company h1{
+    font-size: 30px;
+    margin-top: -10px;
+    margin-left: 70px;
+    color: #fff;
+}
+
+.company p{
+    color: rgba(255, 255, 255, 0.473);
+    margin-left: 70px;
+}
+
+.footerNavlist {
+    margin-top: -25px;
+    margin-left: 130px;
+}
+
+.footerNavlist ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footerNavlist ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: ease-in 0.5s;
+}
+
+.footerNavlist ul li a:hover{
+    color: #19b2d8;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    margin: 0px auto;
+    max-width: 100%;
+    padding-left: 60px;
+}
+
+.footerSocial{
+    margin-left: 100px;
+}
+
+.footerSocial img{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+    margin-top: 20px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.footerSocial img:hover{
+    transform: translateY(-5px);
+}
+
+.hrHolder hr{
+    width: 1100px;
+    margin-top: 90px;
+    margin-left: 100px;
+    border: 1px solid #ffffff8a;
+
+}
+
+.copyright{
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: -60px;
+}

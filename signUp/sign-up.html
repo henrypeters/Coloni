@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1>Coloni</h1>
+        </div>
+
+        <nav>
+            <ul class="navlist">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../signIn/sign-in.html">Sign In</a></li>
+            </ul>
+        </nav>
+        
+        <!-- <div id="navMessage"></div>
+        <div id="linkHolder"></div>
+        <div id="closeButton"></div>
+        <div id="secondMenu"></div>
+        
+        <img src="images/emoji/menu.png" id="menu-btn" class="menu"> -->
+    </div><hr>
+
+
+    <div class="home-card" id="form-card">
+        <div class="text-heading"> 
+            <h2>Sign Up</h2>
+        </div>
+
+        <div class="form" id="form">
+            <div class="holder">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Username ">
+            </div>
+
+            <div class="holder">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+            </div>  
+            
+            <div class="btnHolder">
+                <button id="firstBtn" onmouseenter="store()">Get Started</button>
+            </div>
+        </div>
+        <p id="notify">Please double-click on the button</p>
+    </div>
+
+    <script src="sign-up.js"></script>
+</body>
+</html>
